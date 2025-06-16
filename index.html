@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter&display=swap" rel="stylesheet">
+
+  <title>AI Code Explainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background">
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+  </div>
+
+  <div class="wrapper">
+    <header>
+      <h1>CodeSherlock</h1>
+      <p>Paste your code below to get a smart explanation!</p>
+    </header>
+
+    <main>
+      <textarea id="codeInput" placeholder="Paste your code here..."></textarea>
+      <button onclick="explainCode()">Explain Code</button>
+      <div id="loading" class="loading" style="display:none;">
+        <div class="spinner"></div>
+        <span>Generating explanation...</span>
+      </div>
+      <pre id="output" class="output"></pre>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
